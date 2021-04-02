@@ -4,23 +4,7 @@ from botocore.exceptions import ClientError
 
 
 
-# Creating the low level functional client
 
-client = boto3.client(
-    's3',
-    aws_access_key_id = 'AKIAQVQS2ENMKV4LOUOV',
-    aws_secret_access_key = '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',
-    region_name = 'us-east-1'
-)
-    
-# Creating the high level object oriented interface
-
-resource = boto3.resource(
-    's3',
-    aws_access_key_id = 'AKIAQVQS2ENMKV4LOUOV',
-    aws_secret_access_key = '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',
-    region_name = 'us-east-1'
-)
 
 def input_bucket_from_user():
     bucket_name = str(input("Enter bucket name= "))
